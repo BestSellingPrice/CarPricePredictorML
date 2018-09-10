@@ -1,0 +1,24 @@
+@relation car_data
+
+@attribute kilometers numeric
+@attribute owner numeric
+@attribute engineType {petrol,diesel}
+@attribute rcType {individual}
+@attribute transmissionType {manual}
+@attribute registrationyear DATE "yyyy"
+@attribute city {Bangalore}
+@attribute Model {VXI,LXI}
+@attribute price numeric
+
+@data
+67309,1,petrol,individual,manual,2013,Bangalore,VXI,2.7
+107309,1,petrol,individual,manual,2013,Bangalore,VXI,2.4
+200009,1,petrol,individual,manual,2013,Bangalore,VXI,1.8
+81075,1,petrol,individual,manual,2012,Bangalore,VXI,3
+91075,1,petrol,individual,manual,2012,Bangalore,VXI,2.8
+9720,1,petrol,individual,manual,2011,Bangalore,LXI,2.9
+34367,1,petrol,individual,manual,2012,Bangalore,VXI,2.7
+56000,1,diesel,individual,manual,2013,Bangalore,VXI,2.6
+62882,1,diesel,individual,manual,2011,Bangalore,VXI,1.8
+162882,1,diesel,individual,manual,2011,Bangalore,VXI,1.0
+160002,1,diesel,individual,manual,2011,Bangalore,LXI,0.8

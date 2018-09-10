@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Main Page</title>
+</head>
+
+<body ng-app="demo">
+    <hr/>
+    <div class="container" ng-controller="UserController">
+        <!-- <div class="row">
+        <label>User</label> <input type="text" ng-model="userDto.userName" class="input-sm spacing"/>
+        <label>Skills</label> <input type="text" ng-model="skills" ng-list class="input-sm custom-width spacing"
+                                     placeholder="use comma to separate skills"/>
+        <button ng-click="saveUser()" class="btn btn-sm btn-info">Save User</button>
+    </div> -->
+
+        <div class="row">
+            <div class="col">
+                <label>Kilometers</label>
+            </div>
+
+            <div class="col">
+                <input type="text" ng-model="carDto.kilometers" class="input-sm spacing" />
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col">
+                <label>owner</label>
+            </div>
+            <div class="col">
+                <input type="number" ng-model="carDto.owner" class="input-sm spacing" value="1" />
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col">
+                <label>RC Type</label>
+            </div>
+            <div class="col">
+                <select ng-model="carDto.rcType" class="input-sm spacing">
+                    <option value="INDIVIDUAL">INDIVIDUAL</option>
+                    <!-- <option value="saab">Saab</option> -->
+                </select>
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col">
+                <label>Engine Type</label>
+            </div>
+
+            <div class="col">
+                <select ng-model="carDto.engineType" class="input-sm spacing">
+                    <option value="PETROL">PETROL</option>
+                    <option value="DIESEL">DIESEL</option>
+                </select>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col">
+                <label>Transmission Type</label>
+            </div>
+
+            <div class="col">
+                <select ng-model="carDto.transmissionType" class="input-sm spacing">
+                    <option value="MANUAL">MANUAL</option>
+                    <option value="AUTOMATIC">AUTOMATIC</option>
+                </select>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col">
+                <label>Registration Year</label>
+            </div>
+
+            <div class="col">
+                <input type="number" ng-model="carDto.registrationyear" class="input-sm spacing" value="2000" />
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <button ng-click="saveUser()" class="btn btn-sm btn-info">Predict Price</button>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label>Selling Price</label>
+            </div>
+
+            <div class="col">
+                <input type="text" ng-model="carDto.price" class="input-sm spacing" readonly/>
+            </div>
+
+        </div>
+
+        <hr/>
+        <!-- <div class="row">
+            <p>{{allUsers | json}}</p>
+        </div>
+        <hr/>
+        <div class="row" ng-repeat="user in allUsers">
+            <div class="">
+                <h3>{{user.userName}}</h3>
+                <span ng-repeat="skill in user.skillDtos" class="spacing">{{skill.skillName}}</span>
+            </div>
+        </div> -->
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+<script src="js/app/app.js"></script>
+<script src="js/app/UserController.js"></script>
+<script src="js/app/UserService.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/app/app.css" />
+
+</html>
