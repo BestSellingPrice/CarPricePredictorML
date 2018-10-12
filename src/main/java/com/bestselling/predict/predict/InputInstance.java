@@ -23,7 +23,7 @@ public class InputInstance {
         Instances instances = inputInstance.getInstances(TRAINING_DATA_SET_FILENAME_NUM);
         AbstractClassifier applyclassifier = inputInstance.applyclassifier(new RandomTree(), instances,
                 weka.core.Utils.splitOptions("-K 0 -M 1.0 -V 0.001 -S 1"));
-        CarDTO car = new CarDTO();
+        CarDTO car = CarDTO.builder().build();
         Instance carInstance = inputInstance.createCarInstance(instances, car);
         double result = applyclassifier.classifyInstance(carInstance);
         System.out.println(result);
@@ -35,7 +35,7 @@ public class InputInstance {
         Instances instances = inputInstance.getInstances(TRAINING_DATA_SET_FILENAME_NUM);
         AbstractClassifier applyclassifier = inputInstance.applyclassifier(new RandomTree(), instances,
                 weka.core.Utils.splitOptions("-K 0 -M 1.0 -V 0.001 -S 1"));
-        CarDTO car = new CarDTO();
+        CarDTO car = CarDTO.builder().build();
         Instance carInstance = inputInstance.createCarInstance(instances, car);
         double result = applyclassifier.classifyInstance(carInstance);
         System.out.println(result);
