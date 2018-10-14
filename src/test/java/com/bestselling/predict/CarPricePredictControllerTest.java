@@ -42,15 +42,15 @@ public class CarPricePredictControllerTest {
     }
 
     private CarDTO buildCardDTO() {
-        CarDTO carDTO = new CarDTO();
-        carDTO.setKilometers(2500);
-        carDTO.setKilometers(2);
-        carDTO.setRcType(RCType.INDIVIDUAL);
-        carDTO.setEngineType(EngineType.PETROL);
-        carDTO.setTransmissionType(TransmissionType.MANUAL);
-        carDTO.setRegistrationyear(new Date(100, 1, 1));
-        carDTO.setCity("Bangalore");
-        carDTO.setModelType(ModelType.LXI);
-        return carDTO;
+        return CarDTO.builder()
+                .kilometers(2500)
+                .owner(2)
+                .rcType(RCType.INDIVIDUAL)
+                .engineType(EngineType.PETROL)
+                .transmissionType(TransmissionType.MANUAL)
+                .registrationyear(new Date(100, 1, 1))
+                .city("Bangalore")
+                .modelType(ModelType.LXI)
+                .build();
     }
 }
