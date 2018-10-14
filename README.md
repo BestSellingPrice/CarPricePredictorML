@@ -4,7 +4,7 @@ CarPricePredictorML helps to predict the price of the car based on the "RandomTr
 
 ## Getting Started
 
-`CarPricePredictorML` is a Spring boot based project with Maven support. It can be built with the following commands :
+`CarPricePredictorML` is a Spring Boot based project with Maven support. It can be built with the following commands :
 
 ```
 $ mvn clean install
@@ -19,10 +19,10 @@ $ mvn clean test
 ## Demo
 
 #### UI
-`CarPricePredictorML` is hosted on [heroku server](https://carpricepredictor.herokuapp.com/) with a sample learning model file.
+`CarPricePredictorML` is hosted on a [heroku server](https://carpricepredictor.herokuapp.com/) with a sample learning model file.
 
 #### API
-To use the API of `CarPricePredictorML`, following URL, Header and JSON body can be used:
+To use the API of `CarPricePredictorML`, the following URL, Header and JSON body can be used:
 
 * Request URL
 ```
@@ -51,10 +51,10 @@ Content-Type:application/json
 
 ## Built With
 
-* [Weka](https://www.cs.waikato.ac.nz/ml/weka/) - The Machine Learning framework used
-* [SpringBoot](https://spring.io/projects/spring-boot) - The Rest API framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [AngularJS](https://angularjs.org/) - The UI framework used
-* [Bootstrap](https://getbootstrap.com/) - The UI framework used
+* [Weka](https://www.cs.waikato.ac.nz/ml/weka/) - The Machine Learning framework used.
+* [SpringBoot](https://spring.io/projects/spring-boot) - The Rest API framework used.
+* [Maven](https://maven.apache.org/) - Dependency Management.
+* [AngularJS](https://angularjs.org/) - The UI framework used.
+* [Bootstrap](https://getbootstrap.com/) - The UI framework used.
 
 
