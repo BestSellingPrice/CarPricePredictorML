@@ -56,5 +56,3 @@ Content-Type:application/json
 * [Maven](https://maven.apache.org/) - Dependency Management.
 * [AngularJS](https://angularjs.org/) - The UI framework used.
 * [Bootstrap](https://getbootstrap.com/) - The UI framework used.
-
-
