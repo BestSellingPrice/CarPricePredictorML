@@ -1,38 +1,38 @@
 # CarPricePredictorML
 
-CarPricePredictorML helps to predict the price of the car based on the "RandomTree" Algorithm. As learning model a sample learning model is provided based on which the car price is predicted with the different attributes.
+CarPricePredictorML aide à prédire le prix de la voiture en se basant sur l'algorithme "Random Tree". En tant que modèle d'apprentissage, un exemple de modèle d'apprentissage est fourni sur la base duquel le prix de la voiture est prédit avec les différents attributs.
 
-## Getting Started
+## Commencer
 
-`CarPricePredictorML` is a Spring Boot based project with Maven support. It can be built with the following commands :
-
+`CarPricePredictorML`  est un projet basé sur Spring Boot avec le support Maven. Il peut être construit avec les commandes suivantes:
 ```
 $ mvn clean install
 $ mvn spring-boot:run
 ```
 
-## Running the tests
+## Lancer les tests
 ```
 $ mvn clean test
 ```
 
-## Demo
+## Démo
 
 #### UI
-`CarPricePredictorML` is hosted on a [heroku server](https://carpricepredictor.herokuapp.com/) with a sample learning model file.
+`CarPricePredictorML` est hébergé sur un [heroku serveur](https://carpricepredictor.herokuapp.com/) avec un exemple de fichier de modèle d'apprentissage.
 
 #### API
-To use the API of `CarPricePredictorML`, the following URL, Header and JSON body can be used:
 
-* Request URL
+Pour utiliser l'API de `CarPricePredictorML`, les URL, en-têtes et corps JSON suivants peuvent être utilisés:
+
+* URL de demande
 ```
 [POST] http://carpricepredictor.herokuapp.com/v1/cars 
 ```
-* Header
+* Entête
 ```
 Content-Type:application/json
 ```
-* Body
+* Corps
 ```
 {
     "kilometers": 2500,
@@ -46,15 +46,15 @@ Content-Type:application/json
 }
 ```
 
-# Authors
+# Auteurs
 * **Harikrushna Vanpariya** 
 
-## Built With
+## Construit avec des
 
-* [Weka](https://www.cs.waikato.ac.nz/ml/weka/) - The Machine Learning framework used.
-* [SpringBoot](https://spring.io/projects/spring-boot) - The Rest API framework used.
-* [Maven](https://maven.apache.org/) - Dependency Management.
-* [AngularJS](https://angularjs.org/) - The UI framework used.
-* [Bootstrap](https://getbootstrap.com/) - The UI framework used.
+* [Weka](https://www.cs.waikato.ac.nz/ml/weka/) - Le cadre d'apprentissage automatique utilisé.
+* [SpringBoot](https://spring.io/projects/spring-boot) - La structure de l'API Rest utilisée.
+* [Maven](https://maven.apache.org/) - Gestion de la dépendance.
+* [AngularJS](https://angularjs.org/) - Le framework d'interface utilisateur utilisé.
+* [Bootstrap](https://getbootstrap.com/) - Le framework d'interface utilisateur utilisé.
 
 
