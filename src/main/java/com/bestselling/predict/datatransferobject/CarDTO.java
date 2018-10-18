@@ -8,10 +8,7 @@ import com.bestselling.predict.domainvalue.RCType;
 import com.bestselling.predict.domainvalue.TransmissionType;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonInclude;
-import lombok.Builder;
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @Builder
@@ -20,11 +17,17 @@ public class CarDTO {
 
     int kilometers;
     int owner;
+    @Builder.Default
     RCType rcType = RCType.INDIVIDUAL;
+    @Builder.Default
     EngineType engineType = EngineType.PETROL;
+    @Builder.Default
     TransmissionType transmissionType = TransmissionType.MANUAL;
+    @Builder.Default
     Date registrationyear = new Date(100, 1, 1);
+    @Builder.Default
     String city = "Bangalore";
+    @Builder.Default
     ModelType modelType = ModelType.LXI;
     double price;
 
