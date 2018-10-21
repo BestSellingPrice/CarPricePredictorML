@@ -3,7 +3,6 @@
 CarPricePredictorML aide à prédire le prix de la voiture en se basant sur l'algorithme "Random Tree". En tant que modèle d'apprentissage, un exemple de modèle d'apprentissage est fourni sur la base duquel le prix de la voiture est prédit avec les différents attributs.
 
 ## Commencer
-
  `CarPricePredictorML`  est un projet basé sur Spring Boot avec le support Maven. Il peut être construit avec les commandes suivantes:
 ```
 $ mvn clean install
